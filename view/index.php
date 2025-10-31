@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
-    <header>
-        <h2>Agenda de compromissos</h2>
-    </header>
     <main>
+        <h2 style="margin-bottom: 15px;">Agenda de tarefas</h2>
         <div>
             <?php
             require_once("../model/Tarefas.php");
@@ -21,7 +19,6 @@
                 $_SESSION['erro'] = "";
             }
             ?>
-
             <form action="../controller/criarSessao.php">
                 <label for="tarefa">Tarefa:</label>
                 <input type="text" id="tarefa" name="tarefa" placeholder="reunião, consulta...">
