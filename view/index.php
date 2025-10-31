@@ -14,9 +14,9 @@
             require_once("../model/Tarefas.php");
             session_start();
             
-            if (isset($_SESSION['erro']) && $_SESSION['erro'] != "") {
-                echo '<div id="erro">' . $_SESSION['erro'] . '</div>';
-                $_SESSION['erro'] = "";
+            if (isset($_SESSION['erros']) && $_SESSION['erros'] != "") {
+                echo '<div id="erros">' . $_SESSION['erros'] . '</div>';
+                $_SESSION['erros'] = "";
             }
             ?>
             <form action="../controller/criarSessao.php">
